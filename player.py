@@ -1,4 +1,8 @@
-
+"""Player class.
+Contains player name, ballance and gameplay methods
+Author: Dmitrii Dolgov
+3/15/2026
+"""
 from coin import Coin
 
 class Player:

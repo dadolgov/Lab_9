@@ -1,4 +1,8 @@
-
+"""Coin class. 
+Contains state info for the coin and necessary methods for gameplay.
+Author: Dmitrii Dolgov
+3/15/2026
+"""
 import random
 
 class Coin:

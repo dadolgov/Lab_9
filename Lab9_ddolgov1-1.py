@@ -1,8 +1,12 @@
-
+"""Match Coins Game.
+Contains main gameplay loop of the game.
+Author: Dmitrii Dolgov
+3/15/2026
+    """
 from player import Player
 
 def main():
-    """Main file of Coin game. COntains main gameplay loop.
+    """Main loop of Coin Match Game. Contains main gameplay loop.
     Two players are tossing the coins. If both coins match, player 1 wins a coin, player 2 loses.
     If there's no match, player 2 wins, player 1 loses the coin.
     The player who runs out of coins, loses.
@@ -71,7 +75,7 @@ def main():
         else:
             print("Invalid input! Try again.")
             continue
-        
+
 #program start
 if __name__ == '__main__':
     main()
