@@ -1,18 +1,27 @@
-"""
-Coin class, contains info and methods about the coin in the game
-"""
+
 import random
 
 class Coin:
-    def __init__(self)->None:
-        #didn't find explicit instructions on the initial state, let's randomize them
-        self.__sideup=self.toss()  
+    """Represents a coin from the player's wallet.
+
+    Attributes:
+        __sideup (str): Tells wich side of a coin is up, Heads or Tails
+    """
+    def __init__(self) -> None:
+        self.__sideup=self.toss()  #randomized initial state
     
     def toss(self)->None:
-        if random.randint(0,1)==1:
-            self.__sideup="Heads"
+        """Flips the coin, andomly assigning Heads or Tails to __sideup
+        """
+        if random.randint(0, 1) == 1:
+            self.__sideup = "Heads"
         else:
-            self.__sideup="Tails"
+            self.__sideup = "Tails"
 
-    def get_sideup(self)->str:
+    def get_sideup(self) -> str:
+        """Returns the state of the coin.
+
+        Returns:
+            str: The upside of a coin, Heads or Tails
+        """
         return self.__sideup
